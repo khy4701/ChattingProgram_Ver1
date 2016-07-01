@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="322.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientTest.Controller_root">
+   <children>
+      <Button fx:id="connect" defaultButton="true" layoutX="342.0" layoutY="37.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="Connect" />
+      <Label fx:id="clientName" layoutX="108.0" layoutY="15.0" />
+      <TextField fx:id="txtIp" layoutX="45.0" layoutY="41.0" prefHeight="23.0" prefWidth="156.0" />
+      <ListView fx:id="txtUserList" layoutX="24.0" layoutY="155.0" prefHeight="144.0" prefWidth="176.0" />
+      <Label layoutX="349.0" layoutY="97.0" text="Chat" />
+      <TextField fx:id="txtChatField" layoutX="214.0" layoutY="276.0" prefHeight="23.0" prefWidth="302.0" />
+      <TextArea fx:id="txtChatArea" editable="false" layoutX="214.0" layoutY="121.0" prefHeight="144.0" prefWidth="302.0" />
+      <Label layoutX="22.0" layoutY="97.0" text="Total :" />
+      <Separator layoutY="76.0" prefHeight="15.0" prefWidth="533.0" />
+      <Label layoutX="22.0" layoutY="45.0" text="IP :" />
+      <Label layoutX="214.0" layoutY="45.0" text="Port : " />
+      <TextField fx:id="txtPort" layoutX="253.0" layoutY="41.0" prefHeight="23.0" prefWidth="75.0" />
+      <RadioButton fx:id="RadioBroad" layoutX="31.0" layoutY="128.0" mnemonicParsing="false" selected="true" text="BroadCast" userData="BroadCast">
+         <toggleGroup>
+            <ToggleGroup fx:id="listgroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="RadioWhisper" disable="true" layoutX="125.0" layoutY="128.0" mnemonicParsing="false" text="Whisper" toggleGroup="$listgroup" userData="Whisper" />
+      <Label fx:id="totalNum" layoutX="71.0" layoutY="97.0" />
+      <Label layoutX="21.0" layoutY="15.0" text="ClientName : " />
+      <Button fx:id="disconnect" disable="true" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="87.0" text="Disconnect" />
+   </children>
+</AnchorPane>
